@@ -30,10 +30,10 @@ transform ${openSideBar ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}
                 </nav>
 
                 <div className="flex items-center gap-2">
-                    <button className="cursor-pointer p-2 rounded-full" onClick={setThemes}>
+                    <button className="cursor-pointer p-2 rounded-full" onClick={setThemes} aria-label="toggle-themes">
                         <img className="w-5 " src={themes === 'dark' ? assets.sun_icon : assets.moon_icon} alt="themes_change_icon" />
                     </button>
-                    <button className="cursor-pointer sm:hidden" onClick={() => setOpenSideBar(true)}>
+                    <button className="cursor-pointer sm:hidden" onClick={() => setOpenSideBar(true)} aria-label="toggle-menu">
                         <img className="w-8 opacity-70" alt="menu_icon" src={themes === 'dark' ? assets.menu_icon_dark : assets.menu_icon} />
                     </button>
                     <button className="bg-primary cursor-pointer transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full">
