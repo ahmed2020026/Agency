@@ -27,7 +27,7 @@ const Contact = () => {
                         <label className="dark:text-gray-600 text-sm block mb-2 font-medium">Email id</label>
                         <textarea name="message" id="message" className="border border-gray-400 rounded-md block w-full text-sm p-2.5 outline-0 focus:border-gray-500 resize-none h-30 dark:text-white dark:border-gray-500/20" placeholder="message"></textarea>
                     </div>
-                    <button className="bg-primary cursor-pointer transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full mt-5">Submit
+                    <button className="bg-primary cursor-pointer transition-all text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full mt-5">Submit
                         <img src={assets.arrow_icon} alt="arrow_image" />
                     </button>
                 </form>
