@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import assets from "../assets/assets";
 import { useState } from "react";
 
@@ -24,21 +23,21 @@ transform ${openSideBar ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}
                         <img src={assets.close_icon} className="block w-5 h-5" alt="close_menu" />
                     </button>
 
-                    <Link to={'/'} className="border-b border-transparent hover:border-gray-700">Home</Link>
-                    <Link to={'/'} className="border-b border-transparent hover:border-gray-700">Services</Link>
-                    <Link to={'/'} className="border-b border-transparent hover:border-gray-700">Our Work</Link>
-                    <Link to={'/'} className="border-b border-transparent hover:border-gray-700">Contact US</Link>
+                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Home</button>
+                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Services</button>
+                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Our Work</button>
+                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Contact US</button>
                 </nav>
 
                 <div className="flex items-center gap-2">
                     <button className="cursor-pointer p-2 rounded-full" onClick={setThemes}>
-                        <img className="w-5 " src={themes === 'dark' ? assets.sun_icon : assets.moon_icon} />
+                        <img className="w-5 " src={themes === 'dark' ? assets.sun_icon : assets.moon_icon} alt="themes_change_icon" />
                     </button>
                     <button className="cursor-pointer sm:hidden" onClick={() => setOpenSideBar(true)}>
-                        <img className="w-8 opacity-70" src={themes === 'dark' ? assets.menu_icon_dark : assets.menu_icon} />
+                        <img className="w-8 opacity-70" alt="menu_icon" src={themes === 'dark' ? assets.menu_icon_dark : assets.menu_icon} />
                     </button>
                     <button className="bg-primary cursor-pointer transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full">
-                        contact <img src={assets.arrow_icon} alt="" />
+                        contact <img src={assets.arrow_icon} alt="arrow" />
                     </button>
                 </div>
             </div>

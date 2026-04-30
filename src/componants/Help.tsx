@@ -9,7 +9,7 @@ const Help = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mb-10">
                 {
                     Services.map((item ,index) => (
-                        <div className="shadow-md rounded-md p-5 pr-10 bg-white/2 backdrop-blur-xl border border-gray-300 dark:border-gray-500/10 hover:shadow-none" key={index}>
+                        <div className="shadow-md rounded-md p-5 pr-10 bg-white/5 backdrop-blur-2xl hover:shadow-none" key={index}>
                             <Service Service={item}/>
                         </div>
                     ))
