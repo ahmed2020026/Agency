@@ -80,3 +80,44 @@ export const teamData = [
   { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
   { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
 ]
+
+export const Services = [
+  {
+    title: 'Advertising',
+    content: 'We turn bold ideas into powerful digital solutions that connect, engage...',
+    img: ads_icon,
+  },
+  {
+    title: 'Content marketing',
+    content: 'We help you execute your plan and deliver results.',
+    img: marketing_icon,
+  },
+  {
+    title: 'Content writing',
+    content: 'We help you create a marketing strategy that drives results.',
+    img: content_icon,
+  },
+  {
+    title: 'Social media',
+    content: 'We help you build a strong social media presence and engage with your audience.',
+    img: social_icon,
+  },
+]
+
+export const projects = [
+  {
+    title:'Mobile app marketing',
+    disc:'We turn bold ideas into powerful digital solutions that connect, engage...',
+    img:work_dashboard_management
+  },
+  {
+    title:'Mobile app marketing',
+    disc:'We turn bold ideas into powerful digital solutions that connect, engage...',
+    img:work_fitness_app
+  },
+  {
+    title:'Mobile app marketing',
+    disc:'We turn bold ideas into powerful digital solutions that connect, engage...',
+    img:work_dashboard_management
+  },
+]

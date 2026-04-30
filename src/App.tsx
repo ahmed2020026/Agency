@@ -1,6 +1,9 @@
 import { useState } from "react"
 import NavBar from "./componants/NavBar"
 import Hero from "./componants/Hero";
+import TrustedBy from "./componants/TrustedBy";
+import Help from "./componants/Help";
+import Projects from "./componants/Projects";
 
 const App = () => {
   const [themes , setThemes] = useState<string>('light');
@@ -11,8 +14,17 @@ const App = () => {
         <NavBar themes={themes} setThemes={() => setThemes(prev => prev === 'light'? 'dark':'light')}/>
       </header>
       <main className="pt-17">
-        <section className="dark:bg-black relative pt-10 transition-all">
+        <section className=" relative pt-10 transition-all">
           <Hero />
+        </section>
+        <section>
+          <TrustedBy />
+        </section>
+        <section>
+          <Help />
+        </section>
+        <section>
+          <Projects />
         </section>
       </main>
     </>

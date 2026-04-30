@@ -32,12 +32,12 @@ transform ${openSideBar ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}
 
                 <div className="flex items-center gap-2">
                     <button className="cursor-pointer p-2 rounded-full" onClick={setThemes}>
-                        <img className="w-5 opacity-70 dark:opacity-100" src={themes === 'dark' ? assets.sun_icon : assets.moon_icon} />
+                        <img className="w-5 " src={themes === 'dark' ? assets.sun_icon : assets.moon_icon} />
                     </button>
                     <button className="cursor-pointer sm:hidden" onClick={() => setOpenSideBar(true)}>
                         <img className="w-8 opacity-70" src={themes === 'dark' ? assets.menu_icon_dark : assets.menu_icon} />
                     </button>
-                    <button className="bg-primary cursor-pointer hover:scale-103 transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full">
+                    <button className="bg-primary cursor-pointer transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full">
                         contact <img src={assets.arrow_icon} alt="" />
                     </button>
                 </div>
