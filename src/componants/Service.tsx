@@ -5,11 +5,11 @@ interface ServiceType {
 }
 const Service = ({ Service }: { Service: ServiceType }) => {
     return (
-        <div className="flex justify-start items-center gap-5">
-            <img src={Service.img} alt={`image_service_of_${Service.title}`} className="max-w-24"/>
+        <div className="flex justify-start items-center gap-5 bg-transparent">
+            <img src={Service.img} loading="lazy" alt={`image_service_of_${Service.title}`} className="max-w-24"/>
             <div className="py-5">
-                <h4 className="font-semibold text-gray-900 mb-2 dark:text-white">{Service.title}</h4>
-                <p className="text-gray-500 text-sm">{Service.content}</p>
+                <h3 className="font-semibold text-gray-900 mb-2 dark:text-white">{Service.title}</h3>
+                <p className="text-gray-700 dark:text-gray-500 text-sm">{Service.content}</p>
             </div>
         </div>
     )
