@@ -9,7 +9,7 @@ const Cart = ({ project }: { project: projectType }) => {
             <img src={project.img} loading="lazy" alt={`image of ${project.title}`} className="w-full" />
             <div className="pt-4">
                 <h3 className="mb-2 text-gray-900 dark:text-white font-medium text-lg">{project.title}</h3>
-                <p className="text-sm text-gray-700 dark:text-gray-500 ">{project.disc}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-500 ">{project.disc}</p>
             </div>
         </div>
     )
