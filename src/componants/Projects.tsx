@@ -1,3 +1,4 @@
+import React from "react"
 import { projects } from "../assets/assets"
 import Cart from "./Cart"
 import HeaderSec from "./HeaderSec"
@@ -19,4 +20,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default React.memo(Projects)

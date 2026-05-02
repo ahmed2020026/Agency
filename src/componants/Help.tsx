@@ -1,3 +1,4 @@
+import React from "react"
 import { Services } from "../assets/assets"
 import HeaderSec from "./HeaderSec"
 import Service from "./Service"
@@ -19,4 +20,4 @@ const Help = () => {
     )
 }
 
-export default Help
+export default React.memo(Help)

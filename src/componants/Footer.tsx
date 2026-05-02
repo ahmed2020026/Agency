@@ -12,7 +12,7 @@ const Footer = ({ themes }: { themes: string }) => {
                     <h2 className="text-gray-900 dark:text-gray-200">Subscribe to our newsletter</h2>
                     <p className="text-sm text-gray-600 dark:text-gray-500  mt-3 mb-5">The latest news, articles, and resources, sent to your inbox weekly.</p>
                     <div className="flex gap-2.5">
-                        <input type="text" autoComplete="off" className="border border-gray-400 block w-full text-sm p-2.5 rounded outline-0 focus:border-gray-500 dark:text-white dark:border-gray-500/20" placeholder="enter your email" name="email" />
+                        <input type="text" autoComplete="off" className="border border-gray-400 block w-full text-sm p-2.5 rounded outline-0 focus:border-gray-500 dark:text-white dark:focus:border-gray-400 dark:border-gray-500" placeholder="enter your email" name="email" />
                         <button className="bg-primary cursor-pointer transition-all text-sm inline-flex py-2.5 px-5 text-white rounded">Subscribe</button>
                     </div>
                 </div>

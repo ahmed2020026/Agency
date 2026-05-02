@@ -1,6 +1,8 @@
+import React from "react";
 import assets from "../assets/assets"
 
 const Hero = () => {
+    console.log("first")
     return (
         <div className="container flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 text-center w-full overflow-hidden text-gray-700 dark:text-white">
             <div className="border border-gray-300 dark:border-gray-700 gap-2 p-1.5 pr-4 inline-flex items-center rounded-full">
@@ -16,4 +18,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default React.memo(Hero);
