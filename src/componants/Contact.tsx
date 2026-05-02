@@ -1,4 +1,3 @@
-import React from "react"
 import assets from "../assets/assets"
 import HeaderSec from "./HeaderSec"
 
@@ -37,4 +36,4 @@ const Contact = () => {
     )
 }
 
-export default React.memo(Contact)
+export default Contact

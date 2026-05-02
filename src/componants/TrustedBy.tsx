@@ -1,4 +1,3 @@
-import React from "react"
 import { company_logos } from "../assets/assets"
 
 const TrustedBy = () => {
@@ -16,4 +15,4 @@ const TrustedBy = () => {
     )
 }
 
-export default React.memo(TrustedBy)
+export default TrustedBy

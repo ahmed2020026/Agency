@@ -1,5 +1,3 @@
-import React from "react"
-
 const HeaderSec = ({head,disc}:{head:string, disc:string}) => {
     return (
         <div className="max-w-xl text-center mt-10 mb-5">
@@ -9,4 +7,4 @@ const HeaderSec = ({head,disc}:{head:string, disc:string}) => {
     )
 }
 
-export default React.memo(HeaderSec)
+export default HeaderSec

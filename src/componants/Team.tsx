@@ -1,4 +1,3 @@
-import React from "react"
 import { teamData } from "../assets/assets"
 import HeaderSec from "./HeaderSec"
 
@@ -23,4 +22,4 @@ const Team = () => {
     )
 }
 
-export default React.memo(Team)
+export default Team
