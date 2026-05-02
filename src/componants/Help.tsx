@@ -12,7 +12,7 @@ const Help = () => {
                     <div
                         key={index}
                         data-aos="zoom-in"
-                        data-aos-delay={`${index*400}`}
+                        data-aos-delay={`${index*200}`}
                         className="shadow-md rounded-md p-5 pr-10 bg-white/5 backdrop-blur-2xl hover:shadow-none transition-all"
                     >
                         <Service Service={item} />
