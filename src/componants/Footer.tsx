@@ -5,7 +5,7 @@ const Footer = ({ themes }: { themes: string }) => {
         <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
-                    <img src={themes === 'dark' ? assets.logo_dark : assets.logo} alt="footer_logo" className="w-32 sm:w-40" />
+                    <img width={100} height={100} src={themes === 'dark' ? assets.logo_dark : assets.logo} alt="footer_logo" className="w-32 sm:w-40" />
                     <p className="text-sm text-gray-600 dark:text-gray-500  mt-3">From strategy to execution, we craft digital solutions that move your business forward.</p>
                 </div>
                 <div>

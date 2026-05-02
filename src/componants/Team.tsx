@@ -9,7 +9,7 @@ const Team = () => {
                 {
                     teamData.map((item, index) => (
                         <div key={index} className="flex justify-start gap-5 items-center shadow-md p-3 rounded-md bg-white dark:bg-white/5 backdrop-blur-2xl">
-                            <img src={item.image} loading="lazy" alt={`${item.title}_image`} className="max-w-12 max-h-12 rounded-full"/>
+                            <img width={100} height={100} src={item.image} loading="lazy" alt={`${item.title}_image`} className="max-w-12 max-h-12 rounded-full"/>
                             <div className="flex-1">
                                 <h3 className="text-sm font-bold text-gray-950 dark:text-white">{item.name}</h3>
                                 <p className="text-xs text-gray-600 dark:text-gray-500">{item.title}</p>
