@@ -7,16 +7,25 @@ import Projects from "./componants/Projects";
 import Team from "./componants/Team";
 import Contact from "./componants/Contact";
 import Footer from "./componants/Footer";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const App = () => {
-  const [themes , setThemes] = useState<string>('light');
+  const [themes, setThemes] = useState<string>('light');
   useEffect(() => {
     document.body.className = themes;
-  },[themes])
+  }, [themes]);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <header className="bg-white/50 dark:bg-gray-900/75 z-20 fixed w-full top-0 backdrop-blur-xl">
-        <NavBar themes={themes} setThemes={() => setThemes(prev => prev === 'light'? 'dark':'light')}/>
+        <NavBar themes={themes} setThemes={() => setThemes(prev => prev === 'light' ? 'dark' : 'light')} />
       </header>
       <main className="pt-17">
         <section className=" relative pt-10">
@@ -39,7 +48,7 @@ const App = () => {
         </section>
       </main>
       <footer className="bg-gray-50 dark:bg-gray-900/10 pt-10 z-20 backdrop-blur-xl">
-        <Footer themes={themes}/>
+        <Footer themes={themes} />
       </footer>
     </>
   )

@@ -10,7 +10,8 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 mb-10">
                 {projects.map((project,index) => (
-                    <div key={index}>
+                    <div key={index} data-aos="zoom-in"
+                        data-aos-delay={`${index*400}`}>
                         <Cart project={project} />
                     </div>
                 ))}
