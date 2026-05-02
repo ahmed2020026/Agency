@@ -7,7 +7,7 @@ const NavBar = ({ themes, setThemes }: { themes: string, setThemes: () => void }
     return (
         <>
             <div className="container flex justify-between items-center font-medium">
-                <img width={100} height={100} src={themes === 'dark' ? assets.logo_dark : assets.logo} className="w-32 sm:w-40" alt="logo" />
+                <img src={themes === 'dark' ? assets.logo_dark : assets.logo} className="w-32 sm:w-40" alt="logo" />
 
 <nav className={`flex md:items-center gap-5 z-50 sm:text-sm 
 text-gray-700 dark:text-white transition-all
