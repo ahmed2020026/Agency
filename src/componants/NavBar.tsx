@@ -1,5 +1,6 @@
 import assets from "../assets/assets";
 import { useState } from "react";
+import { ScrollTo } from "../hooks/useScroll";
 
 const NavBar = ({ themes, setThemes }: { themes: string, setThemes: () => void }) => {
     const [openSideBar, setOpenSideBar] = useState<boolean>(false);
@@ -23,10 +24,10 @@ transform ${openSideBar ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}
                         <img src={assets.close_icon} className="block w-5 h-5" alt="close_menu" />
                     </button>
 
-                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Home</button>
-                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Services</button>
-                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Our Work</button>
-                    <button className="border-b cursor-pointer border-transparent hover:border-gray-700">Contact US</button>
+                    <button className="border-b cursor-pointer border-transparent sm:hover:border-gray-700" onClick={() => ScrollTo('Hero')}>Home</button>
+                    <button className="border-b cursor-pointer border-transparent sm:hover:border-gray-700" onClick={() => ScrollTo('Services')}>Services</button>
+                    <button className="border-b cursor-pointer border-transparent sm:hover:border-gray-700" onClick={() => ScrollTo('work')}>Our Work</button>
+                    <button className="border-b cursor-pointer border-transparent sm:hover:border-gray-700" onClick={() => ScrollTo('contact')}>Contact US</button>
                 </nav>
 
                 <div className="flex items-center gap-2">
@@ -36,7 +37,7 @@ transform ${openSideBar ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}
                     <button className="cursor-pointer sm:hidden" onClick={() => setOpenSideBar(true)} aria-label="toggle-menu">
                         <img className="w-8 opacity-70" alt="menu_icon" src={themes === 'dark' ? assets.menu_icon_dark : assets.menu_icon} />
                     </button>
-                    <button className="bg-primary cursor-pointer transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full">
+                    <button className="bg-primary cursor-pointer transition-all max-md:hidden text-sm inline-flex gap-3 py-2 px-5 text-white rounded-full" onClick={() => ScrollTo('contact')}>
                         contact <img src={assets.arrow_icon} alt="arrow" />
                     </button>
                 </div>

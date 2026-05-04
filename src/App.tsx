@@ -27,23 +27,23 @@ const App = () => {
       <header className="bg-white/50 dark:bg-gray-900/75 z-20 fixed w-full top-0 backdrop-blur-xl">
         <NavBar themes={themes} setThemes={() => setThemes(prev => prev === 'light' ? 'dark' : 'light')} />
       </header>
-      <main className="pt-17">
-        <section className=" relative pt-10">
+      <main className="pt-17" id="Hero">
+        <section className=" relative pt-10" >
           <Hero />
         </section>
         <section>
           <TrustedBy />
         </section>
-        <section>
+        <section id="Services" className="pt-10">
           <Help />
         </section>
-        <section>
+        <section id="work" className="pt-10">
           <Projects />
         </section>
         <section>
           <Team />
         </section>
-        <section>
+        <section id="contact" className="pt-10">
           <Contact />
         </section>
       </main>
